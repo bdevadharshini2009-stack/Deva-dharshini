@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>B. Deva Dharshini | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7ff;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #60a5fa;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        /* Home Section */
+        .home {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #dbeafe, #f5f3ff);
+        }
+
+        .home h1 {
+            font-size: 42px;
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+
+        .home h3 {
+            font-size: 23px;
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .home p {
+            max-width: 650px;
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1e40af;
+            transform: translateY(-3px);
+        }
+
+        /* Common Sections */
+        section {
+            padding: 60px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            color: #1e3a8a;
+            margin-bottom: 30px;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        /* Education */
+        .education {
+            background: #eaf0ff;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #00000012;
+            width: 280px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        /* Skills */
+        .skill {
+            background: #e5edff;
+            padding: 15px;
+            margin: 15px auto;
+            max-width: 650px;
+            border-radius: 8px;
+        }
+
+        .skill h3 {
+            margin-bottom: 8px;
+            color: #1e3a8a;
+        }
+
+        .skill-bar {
+            background: #d1d5db;
+            height: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .skill-level {
+            background: #2563eb;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        /* Career Goal */
+        .career {
+            background: #eaf0ff;
+            text-align: center;
+        }
+
+        .career p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 12px 0;
+            overflow-wrap: anywhere;
+        }
+
+        .contact a {
+            color: #2563eb;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .home h1 {
+                font-size: 30px;
+            }
+
+            .home h3 {
+                font-size: 20px;
+            }
+
+            .section-title {
+                font-size: 25px;
+            }
+
+            section {
+                padding: 45px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h2>Deva Dharshini</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#career">Career</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <h1>Hi, I'm B. Deva Dharshini</h1>
+
+        <h3>Aspiring Data Analyst</h3>
+
+        <p>
+            Welcome to my personal portfolio!
+            I am a Computer Science student at
+            Bishop Heber College, Trichy.
+            I am passionate about data analysis,
+            problem-solving, and technology.
+        </p>
+
+        <a href="#about" class="btn">Explore My Portfolio</a>
+
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <p>
+            My name is B. Deva Dharshini.
+            I am pursuing my undergraduate studies at
+            Bishop Heber College, Tiruchirappalli,
+            from 2026 to 2029.
+            I am interested in working with data,
+            finding useful insights, and solving problems.
+            I am developing my skills in SQL,
+            Microsoft Excel, and programming.
+            My goal is to become a skilled Data Analyst
+            and build a successful career in the technology field.
+        </p>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <h2 class="section-title">My Education</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>College Education</h3>
+                <p><strong>Bishop Heber College</strong></p>
+                <p>Tiruchirappalli, Tamil Nadu</p>
+                <p>B.Sc. Computer Science</p>
+                <p>2026 - 2029</p>
+            </div>
+
+            <div class="card">
+                <h3>Higher Secondary (12th)</h3>
+                <p>Marks Obtained</p>
+                <h2>543</h2>
+            </div>
+
+            <div class="card">
+                <h3>Secondary School (10th)</h3>
+                <p>Marks Obtained</p>
+                <h2>465</h2>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skill">
+            <h3>SQL (Structured Query Language)</h3>
+            <p>Learning database management and data querying.</p>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 75%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>Microsoft Excel</h3>
+            <p>Learning spreadsheets, data organization, and analysis.</p>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 80%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>Programming</h3>
+            <p>Developing coding and logical thinking skills.</p>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 70%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>Problem-Solving</h3>
+            <p>Analyzing problems and finding effective solutions.</p>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 85%;"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Career Goal Section -->
+    <section class="career" id="career">
+        <h2 class="section-title">My Career Goal</h2>
+
+        <p>
+            My ambition is to become a Data Analyst.
+            I want to use SQL, Microsoft Excel, and
+            data visualization tools to analyze information
+            and support better decision-making.
+            I aim to improve my technical skills,
+            complete practical projects, and gain
+            experience in the field of data analytics.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <p>
+            <strong>Name:</strong> B. Deva Dharshini
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:b.devadharshini2009@gmail.com">
+                b.devadharshini2009@gmail.com
+            </a>
+        </p>
+
+        <p>
+            <strong>Linked
